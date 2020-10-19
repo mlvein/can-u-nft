@@ -1,0 +1,36 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    max-width: 500px;
+    width: 80%;
+    border: 1px solid black;
+    min-height: 400px;
+    height: 60%;
+    max-height: 800px;
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 0;
+}
+
+    #result {
+        border-top: 1px solid black;
+        min-width: 200px;
+        width: 60%;
+        max-width: 400px;
+        height: 200px;
+        margin: 0 auto;
+    }
