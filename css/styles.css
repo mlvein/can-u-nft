@@ -26,6 +26,10 @@ h1 {
     margin: 40px 0;
 }
 
+    #input001 {
+        text-transform: lowercase;
+    }
+
     #result {
         border-top: 1px solid black;
         min-width: 200px;
