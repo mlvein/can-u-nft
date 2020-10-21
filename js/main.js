@@ -14,6 +14,9 @@ function search() {
     
     
     switch (searchQuery) {
+        case "":
+            searchResult = "You can't turn nothing into a non-fungible token... or can you?!!"
+        break;
         case "chicken":
             searchResult = "Hmm... it might be possible!";
         break;

@@ -1,3 +1,16 @@
+:root {
+    --bg-color: #0008C3;
+    --dark-blue-stroke: #0007A3;
+    --text-color: #ffffff;
+    --white: #ffffff;
+}
+
+html {
+    background-color: var(--bg-color);
+    font-family: "EB Garamond", "serif";
+    color: var(--dark-blue-stroke);
+}
+
 header {
     width: 100%;
     display: flex;
@@ -8,12 +21,16 @@ header {
 
 h1 {
     text-align: center;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .card {
     max-width: 500px;
     width: 80%;
-    border: 1px solid black;
+    background-color: var(--white);
+    border: 1px solid var(--dark-blue-stroke);
+    border-radius: .2em;
     min-height: 400px;
     height: 60%;
     max-height: 800px;
@@ -23,17 +40,57 @@ h1 {
 .form {
     display: flex;
     justify-content: space-evenly;
-    margin: 40px 0;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--dark-blue-stroke);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+    input {
+        color: var(--dark-blue-stroke);
+        font: 400 14px 'EB Garamond';
+        border: none;
+    }
+
+        input[type=text] {
+            font: 400 2em 'EB Garamond', serif;
+            position: relative;
+            top: 10px;
+            text-align: center;
+        }
+
+        input:focus {
+            outline: none;
+        }
 
     #input001 {
         text-transform: lowercase;
+        height: 40px;
+        font-family: "EB Garamond", serif;
+        font-size: 18px;
+        color: var(--dark-blue-stroke);
+        border: none;
+        width: 50%;
+        min-width: 150px;
+    }
+
+    .form>button {
+        background-color: var(--white);
+        width: 40px;
+        border-radius: 2em;
+        border: 1px solid var(--dark-blue-stroke);
+        font-family: 'EB Garamond', serif;
+        font-size: 1.8em;
+        color: var(--dark-blue-stroke);
     }
 
     #result {
-        border-top: 1px solid black;
-        min-width: 200px;
-        width: 60%;
+        background-color: var(--dark-blue-stroke);
+        color: white;
+        width: 90%;
         max-width: 400px;
         height: 200px;
         margin: 0 auto;
