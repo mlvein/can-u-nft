@@ -1,4 +1,15 @@
+var resultWildlife =
+`
+    <h4>Yes, It's possible!</h4>
+    <hr>
+    <p>
+        Here are some platforms that have done so:
+    </p>
 
+    <ul>
+        <li><a href="https://wildcards.world/" target="_blank">wildcards</a></li>
+    </ul>
+`
   
 var resultPossibleArt = 
     `
@@ -59,6 +70,10 @@ function search() {
         case "a cat":
         case "cat":
             searchResult = resultCats;
+        break;
+        case "animals":
+        case "wildlife":
+            searchResult = resultWildlife;
         break;
         default:
             searchResult = defaultResponse;
