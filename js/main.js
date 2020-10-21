@@ -14,6 +14,34 @@ var resultPossibleArt =
         </ul>
     `;
 
+var defaultResponse =
+    `
+    <h4>I'm not sure...</h4>
+    <hr>
+    <p>
+        Know more about NFTs here:
+    </p>
+    `;
+
+var respondBlank = 
+    `
+    <h4>You left it blank...</h4>
+    `;    
+
+var resultCats =
+`
+    <h4>Yes! Well, sort of...</h4>
+    <hr>
+    <p>
+        Here are some platforms that have done so:
+    </p>
+
+    <ul>
+        <li><a href="https://www.cryptokitties.co/" target="_blank">Cryptokitties</a></li>
+        <li><a href="https://rarible.com/" target="_blank">rarible</a></li>
+    </ul>
+`;    
+
 function search() {
     var searchResult;
     var searchQuery = document.getElementById("input001").value;
@@ -21,20 +49,19 @@ function search() {
     
     switch (searchQuery) {
         case "":
-            searchResult = "You can't turn nothing into a non-fungible token... or can you?!!"
-        break;
-        case "chicken":
-            searchResult = "Hmm... it might be possible!";
+            searchResult = respondBlank;
         break;
         case "art":
-        case "music":
+        case "collectibles":
             searchResult = resultPossibleArt;
         break;
         case "cats":
-            searchResult = "Well... sort of";
+        case "a cat":
+        case "cat":
+            searchResult = resultCats;
         break;
         default:
-            searchResult = "Not sure...";
+            searchResult = defaultResponse;
         break;
     }
 
