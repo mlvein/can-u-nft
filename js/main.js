@@ -1,16 +1,22 @@
-var resultPossible = 
+
+  
+var resultPossibleArt = 
     `
-    <p>Yes, It's possible! Here are some popular platforms that have done so:</p>
+        <h4>Yes, It's possible!</h4>
+        <hr>
+        <p>
+            Here are some platforms that have done so:
+        </p>
+        
         <ul>
-            <li>makersplace</li>
-            <li>rarible</li>
+            <li><a href="https://makersplace.com/" target="_blank">makersplace</a></li>
+            <li><a href="https://rarible.com/" target="_blank">rarible</a></li>
         </ul>
     `;
 
 function search() {
     var searchResult;
     var searchQuery = document.getElementById("input001").value;
-    // searchQuery = searchQuery.toLowerCase;
     
     
     switch (searchQuery) {
@@ -22,7 +28,7 @@ function search() {
         break;
         case "art":
         case "music":
-            searchResult = resultPossible;
+            searchResult = resultPossibleArt;
         break;
         case "cats":
             searchResult = "Well... sort of";

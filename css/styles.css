@@ -1,8 +1,11 @@
 :root {
     --bg-color: #0008C3;
     --dark-blue-stroke: #0007A3;
+    --blue-accent: #333ADE;
+    --yellow: #FAFF00;
     --text-color: #ffffff;
     --white: #ffffff;
+    --placeholder-color: #C4C6F1;
 }
 
 html {
@@ -21,20 +24,22 @@ header {
 
 h1 {
     text-align: center;
+    font-size: 1.6em;
     font-weight: 400;
+    letter-spacing: 0.02em;
     font-style: italic;
 }
 
 .card {
-    max-width: 500px;
-    width: 80%;
+    width: 260px;
+    height: 400px;
     background-color: var(--white);
     border: 1px solid var(--dark-blue-stroke);
-    border-radius: .2em;
-    min-height: 400px;
-    height: 60%;
-    max-height: 800px;
+    border-radius: 14px;
     margin: 0 auto;
+    background-image: url('../assets/card.svg');
+    background-size: cover;
+    background-position: left;
 }
 
 .form {
@@ -44,7 +49,7 @@ h1 {
     padding-bottom: 10px;
     margin-bottom: 20px;
     border-bottom: 1px solid var(--dark-blue-stroke);
-    width: 90%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -62,15 +67,23 @@ h1 {
             text-align: center;
         }
 
+        input::placeholder {
+            color: var(--placeholder-color);
+        }
+
         input:focus {
             outline: none;
+        }
+
+        input:focus::placeholder {
+            color: transparent;
         }
 
     #input001 {
         text-transform: lowercase;
         height: 40px;
         font-family: "EB Garamond", serif;
-        font-size: 18px;
+        font-size: 28px;
         color: var(--dark-blue-stroke);
         border: none;
         width: 50%;
@@ -87,11 +100,75 @@ h1 {
         color: var(--dark-blue-stroke);
     }
 
+        .form>button:hover {
+            background-color: var(--bg-color);
+            color: var(--white);
+        }
+
+        .form>button:focus {
+            outline: none;
+        }
+
     #result {
         background-color: var(--dark-blue-stroke);
         color: white;
-        width: 90%;
+        width: 80%;
         max-width: 400px;
         height: 200px;
+        border-radius: 12px;
         margin: 0 auto;
     }
+
+        #result>h4 {
+            margin: 0 auto;
+            width: 80%;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            font-family: 'EB Garamond', serif;
+            font-weight: 400;
+            letter-spacing: 0.03em;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        #result>hr {
+            border: 1px solid var(--blue-accent);
+            width: 68%;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+
+        #result>p {
+            width: 80%;
+            margin: 0 auto;
+            font-family: 'EB Garamond', serif;
+            font-size: 16px;
+            font-weight: 400;
+            /* font-style: italic; */
+            overflow: scroll;
+            letter-spacing: 0.02em;
+        }
+
+        
+
+            #result>ul {
+                list-style: none;
+            }
+
+            #result>ul>li>a {
+                color: white;
+                letter-spacing: 0.03em;
+                font-style: italic;
+            }
+
+                #result>ul>li>a:hover {
+                    color: var(--yellow);
+                }
+
+            #result>ul>li::before {
+                content: "+ ";
+                margin-left: 4px;
+            }
+
+            
