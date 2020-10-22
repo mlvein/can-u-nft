@@ -7,13 +7,23 @@ Is an interactive, educational medium that aims to inform new users about NFTs. 
 
 ---
 
-As a Designer who has an interest in the blockchain technology, I have always found NFTs to be quite confusing to understand. For this project, I want to create a fun and easy way to help new users get a better idea of what non-fungible tokens are as well as pique their curiosity in thinking about the untapped possibilities for NFTs.
+![readme-header](assets/image-header.png)
 
-One of my main ideas was to open discussions about what can or can't be turned into NFTs by making the cards exportable and shareable to social sites like twitter along with a filterable hashtag (ie #canuNFT)
+As a Designer who has an interest in the blockchain technology, I have always found NFTs to be quite confusing to understand. For this project, I want to create a fun and easy way to help new users get a better idea of what non-fungible tokens are as well as pique their curiosity into thinking about the untapped possibilities for NFTs.
+
+One of my main ideas was to encourage discussions about what can or can't be turned into NFTs by making the cards exportable and shareable to social sites like Twitter along with a filterable hashtag (ie #canuNFT)
 
 ![card-screenshot](assets/screenshot-card.png)
 
-It would be nice to have a new user's idea as to what they think could be a NFT. I think this simplified approach also takes away the anxiety I feel seeing a huge block of text trying to explain the tech behing NFTs and transforms them into bite sized pieces and in a choose-your-own-adventure way.
+It would be nice to have a new user's perspective as to what they think could be a NFT. I think this simplified approach also takes away the anxiety when seeing a huge block of text trying to explain the technology behind the tokens.
+
+For further education, I decided to split up NFT info into bite sized pieces that they can swipe (on mobile) or scroll through (larger screens) along with fun fungi illustrations - I think the relation between the two (fungus and fungibility) can further help increase curiosity and fun!
+
+![info-list](assets/info-list.png)
+
+There's still a lot of content and features that I want to include in this project, so I'll be listing them below and will continute to chip away slowly as I get free time :)
+
+Feel free to reach me if you have any questions! I have also included downloadable/printable posters and materials via the resource link.
 
 ---
 
