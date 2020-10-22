@@ -64,6 +64,8 @@ function search() {
         break;
         case "art":
         case "collectibles":
+        case "artwork":
+        case "artworks":
             searchResult = resultPossibleArt;
         break;
         case "cats":

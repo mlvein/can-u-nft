@@ -21,6 +21,15 @@ header {
     height: 60px;
 }
 
+footer {
+    background-image: url(../assets/footer.png);
+    width: 260px;
+    background-size: contain;
+    margin: 0 auto;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+
 
 h1 {
     text-align: center;
@@ -146,7 +155,7 @@ h1 {
             font-size: 16px;
             font-weight: 400;
             /* font-style: italic; */
-            overflow: scroll;
+            overflow: hidden;
             letter-spacing: 0.02em;
         }
 
