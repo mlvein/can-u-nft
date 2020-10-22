@@ -30,7 +30,9 @@ var defaultResponse =
     <h4>I'm not sure...</h4>
     <hr>
     <p>
-        Know more about NFTs here:
+        Wanna know more about NFTs?
+        <br>
+        <a href="#">Click Here</a>
     </p>
     `;
 

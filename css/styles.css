@@ -165,12 +165,14 @@ h1 {
                 list-style: none;
             }
 
+            #result>p>a,
             #result>ul>li>a {
                 color: white;
                 letter-spacing: 0.03em;
                 font-style: italic;
             }
 
+                #result>p>a:hover,
                 #result>ul>li>a:hover {
                     color: var(--yellow);
                 }
