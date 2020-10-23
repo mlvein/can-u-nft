@@ -3,7 +3,7 @@ var resultWildlife =
     <h4>Yes, It's possible!</h4>
     <hr>
     <p>
-        Here are some platforms that have done so:
+        Sources:
     </p>
 
     <ul>
@@ -16,7 +16,7 @@ var resultPossibleArt =
         <h4>Yes, It's possible!</h4>
         <hr>
         <p>
-            Here are some platforms that have done so:
+            Popular platforms:
         </p>
         
         <ul>
@@ -31,8 +31,8 @@ var defaultResponse =
     <hr>
     <p>
         Wanna know more about NFTs?
-        <br>
-        <a href="#">Click Here</a>
+        <br><br>
+        <a id="learnMore" onclick="resourceReveal()" href="#">Explore ></a>
     </p>
     `;
 
@@ -46,7 +46,7 @@ var resultCats =
     <h4>Yes! Well, sort of...</h4>
     <hr>
     <p>
-        Here are some platforms that have done so:
+        Popular platforms:
     </p>
 
     <ul>

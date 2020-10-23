@@ -1,0 +1,7 @@
+@media screen and (min-width:768px) {
+    footer {
+        position: relative;
+        left: 0;
+        transform: translate(0, 0);
+    }
+}

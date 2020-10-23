@@ -3,36 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Can You NFT This?!</title>
+    <title>Can You NFT...</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,500&display=swap" rel="stylesheet">
     <script src="js/answers.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 </head>
 <body>
 
     <header>
       <div class="logo"></div>
-      <div id="menu"></div>
+      <div id="menu" onclick="cardReveal()">
+        <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0.5" y1="9.40448" x2="23.785" y2="9.40448" stroke="white" stroke-linecap="round"/>
+          <path d="M13.7615 1L23.8075 9.55396" stroke="white" stroke-linecap="round"/>
+          <path d="M23.4755 9.90448L13.4294 18.4584" stroke="white" stroke-linecap="round"/>
+        </svg>
+      </div>
     </header>
 
-    <div class="card">
+    <div id="cardContainer" class="container">
 
-      <h1>can you NFT... </h1>
-  
+      <div id="searchCard" class="card">
+
+        <h1>can you NFT... </h1>
+    
         <div class="form">
           <input id="input001" type="text" placeholder="a chicken"/>
           <button onclick="search()">?</button>
-
-
         </div>
-
+  
         <div id="result"></div>
         
       </div>
+  
+      <div id="resourceCard" class="card card-2">
+        <div id="resourceList" class="resource">
+          <ul>
+            <li><a onclick="infoReveal()" href="#info1">What is a NFT?</a></li>
+            <li><a onclick="infoReveal()" href="#info2">Fungible</a></li>
+            <li><a onclick="infoReveal()" href="#info3">Non-Fungible</a></li>
+            <li><a onclick="infoReveal()" href="#info4">ERC</a></li>
+            <li><a onclick="infoReveal()" href="#info5">ERC-20</a></li>
+            <li><a onclick="infoReveal()" href="#info6">ERC-721</a></li>
+            <li><a onclick="infoReveal()" href="#info7">NFT Platforms</a></li>
+            <li><a onclick="infoReveal()" href="#info8">Collectibles</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="infoCard" class="card card-2">
+        <div class="resource">
+
+          <div id="info1">
+            <h4>What is a NFT?</h4>
+            <hr>
+            <p>
+              A <strong>NFT</strong> or <em>non-fungible token</em> is a type of cryptographic token in the blockchain.
+              <br><br>
+              It is used as a secure way to represent something unique or <em>non-fungible.</em>
+            </p>
+          </div>
+
+          <div id="info2">
+            <h4>Fungible</h4>
+            <hr>
+            <p>
+              <em>Fungibility</em> is the interchangeability of a token into other tokens without the loss
+              of intrinsic value
+              <br><br>
+              Bitcoin, Ethereum, and ERC-20 Tokens are considered as Fungible tokens as they
+              can be traded or swapped with while retaining their use and value. 
+            </p>
+          </div>
+
+          <div id="info3">
+            <h4>Non-Fungible</h4>
+            <hr>
+            <p>
+              Non-fungible is the opposite of fungible - meaning they are unique and cannot be interchangeable.
+              <br><br>
+              Non fungible goods are often rare or limited in value.
+            </p>
+          </div>
+
+          <div id="info4">
+            <h4>ERC</h4>
+            <hr>
+            <p>
+              ERC stands for <em>Ethereum Request for Comments</em>
+              <br><br>
+              It is an application-level standard that defines a set of functions
+              for a token type, allowing smart contract and application interactions.
+            </p>
+          </div>
+
+          <div id="info5">
+            <h4>ERC-20</h4>
+            <hr>
+            <p>
+              ERC-20 is the most commoen ERC standard being used solely in the Ethereum platform.
+              <br><br>
+              This is an open standard commonly used to create <em>fungible</em> tokens that can be
+              traded within the Ethereum ecosystem.
+            </p>
+          </div>
+
+          <div id="info6">
+            <h4>ERC-721</h4>
+            <hr>
+            <p>
+              ERC-721 is a free and open standard that defines a set of functions on how to build
+              unique or <em>non-fungible</em> tokens.
+            </p>
+          </div>
+
+          <div id="info7">
+            <h4>NFT Marketplaces</h4>
+            <hr>
+            <p>
+              NFT Marketplaces are where NFTs can be created or sold.
+            </p>
+          </div>
+
+          <div id="info8">
+            <h4>Collectibles</h4>
+            <hr>
+            <p>
+              Collectibles is a common term used within the NFT ecosystem to represent a non-fungible token.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    
 
     <footer></footer>
     
-
 </body>
 </html>

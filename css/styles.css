@@ -12,13 +12,24 @@ html {
     background-color: var(--bg-color);
     font-family: "EB Garamond", "serif";
     color: var(--dark-blue-stroke);
+    overflow-x: hidden;
 }
 
+body {
+    margin-top: 20px;
+    overflow-x: scroll;
+}
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
 header {
-    width: 100%;
+    width: 260px;
     display: flex;
     justify-content: space-between;
     height: 60px;
+    margin: 0 auto;
 }
 
 footer {
@@ -28,7 +39,111 @@ footer {
     margin: 0 auto;
     height: 50px;
     background-repeat: no-repeat;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
+
+#menu {
+    display: none;
+    height: 40px;
+    width: 40px;
+    border: 1px solid var(--white);
+    position: relative;
+    top: 12px;
+    border-radius: 24px;
+    left: 0px;
+    transition: left 0.2s ease;
+}
+
+    #menu:hover {
+        cursor: pointer;
+        left: 8px;
+    }
+
+    #menu>svg {
+        position: relative;
+        left: 8px;
+        top: 10px;
+    }
+
+#searchCard {
+    position: relative;
+    left: 0px;
+    transition: left 0.2s ease;
+}
+
+#resourceCard,
+#infoCard {
+    display: none;
+    /* margin-right: 20px; */
+}
+
+    #resourceList {
+        display: block;
+    }
+
+    .resource {
+        width: 220px;
+        height: 368px;
+        margin: 0 auto;
+        position: relative;
+        top: 16px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+        .resource > div {
+            display: none;
+        }
+
+            .resource>div>h4 {
+                font-size: 18px;
+                font-weight: 400;
+                font-style: normal;
+                margin-block-start: 8px;
+                margin-block-end: 8px;
+            }
+
+            .resource>div>hr {
+                border: 1px dotted var(--placeholder-color);
+            }
+
+            .resource>div>p {
+                font-size: 0.9em;
+                letter-spacing: 0.025em;
+            }
+
+        .resource > div:target {
+            display: block;
+        }
+
+        .resource::-webkit-scrollbar {
+            display: none;
+        }
+
+        .resource>ul {
+            list-style: none;
+            padding-inline-start: 0;
+            margin-block-start: 0;
+        }
+
+        .resource>ul>li {
+            font-size: 18px;
+            letter-spacing: 0.02em;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--placeholder-color);
+        }
+
+        .resource>ul>li>a {
+            text-decoration: none;
+            font-style: normal;
+            color: var(--dark-blue-stroke);
+        }
+
+        .resource>ul>li>a:hover {
+             font-style: italic;
+        }
 
 
 h1 {
@@ -39,6 +154,18 @@ h1 {
     font-style: italic;
 }
 
+    
+
+.container {
+    display: flex;
+    margin: 0 auto;
+}
+
+    #cardContainer {
+        width: 260px; /*540px expanded*/
+        transition: width 0.2s ease;
+    }
+
 .card {
     width: 260px;
     height: 400px;
@@ -47,9 +174,13 @@ h1 {
     border-radius: 14px;
     margin: 0 auto;
     background-image: url('../assets/card.svg');
-    background-size: cover;
     background-position: left;
 }
+
+    .card-2 {
+        display: inline-block;
+        background-image: none;
+    }
 
 .form {
     display: flex;
@@ -98,6 +229,15 @@ h1 {
         width: 50%;
         min-width: 150px;
     }
+
+        a#learnMore {
+            height: 40px;
+            border: 1px solid var(--white);
+            width: 120px;
+            border-radius: 4px;
+            padding: 8px;
+            text-decoration: none;
+        }
 
     .form>button {
         background-color: var(--white);
@@ -149,20 +289,21 @@ h1 {
         }
 
         #result>p {
-            width: 80%;
+            width: 140px;
+            text-align: center;
+            height: auto;
             margin: 0 auto;
             font-family: 'EB Garamond', serif;
             font-size: 16px;
             font-weight: 400;
-            /* font-style: italic; */
             overflow: hidden;
             letter-spacing: 0.02em;
+            padding-bottom: 10px;
         }
-
-        
 
             #result>ul {
                 list-style: none;
+                margin-block-start: 8px;
             }
 
             #result>p>a,
