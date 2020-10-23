@@ -64,6 +64,7 @@ function search() {
         case "":
             searchResult = respondBlank;
         break;
+
         case "art":
         case "collectibles":
         case "collectible":
@@ -71,18 +72,20 @@ function search() {
         case "artworks":
             searchResult = resultPossibleArt;
         break;
+
         case "cats":
         case "a cat":
         case "cat":
             searchResult = resultCats;
         break;
+
         case "animals":
         case "wildlife":
             searchResult = resultWildlife;
         break;
+
         default:
             searchResult = defaultResponse;
-        break;
     }
 
     document.getElementById("result").innerHTML = searchResult;
