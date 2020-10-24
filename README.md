@@ -19,7 +19,6 @@ It would be nice to have a new user's perspective as to what they think could be
 
 For further education, I decided to split up NFT info into bite sized pieces that they can swipe (on mobile) or scroll through (larger screens) along with fun fungi illustrations - I think the relation between the two (fungus and fungibility) can further help increase curiosity and fun!
 
-![info-list](assets/info-list.png)
 ![resources-screenshot](assets/screenshot-resources.png)
 
 There's still a lot of content and features that I want to include in this project, so I'll be listing them below and will continute to chip away slowly as I get free time :)
@@ -34,6 +33,11 @@ Feel free to reach me if you have any questions! I have also included downloadab
 - Add illustrations
 - NFT page / infographic - interactive and downloadable versions
 - gsap transitions
+
+#### needs fixing
+- learn more button visibility
+- scroll bar styling
+- cases don't seem to work on some mobile browsers (goes to catch-all for some reason)
 
 
 
