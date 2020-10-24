@@ -1,4 +1,5 @@
 function search() {
+    
     var searchResult;
     var searchQuery = document.getElementById("input001").value;
     
@@ -35,23 +36,38 @@ function search() {
     }
 
     document.getElementById("result").innerHTML = searchResult;
+
   }
 
+
+
 function resourceReveal() {
-    var body = document.getElementsByTagName("body");
     var card = document.getElementById("cardContainer");
+    var cardWidth = card.clientWidth;
+
+    if (card.clientWidth >= 540) {
+        document.getElementById("learnMore").style.cssText = 'display: none;';
+    } 
     
-    // document.getElementById("searchCard").style.cssText = 'left: -240px;';
     document.getElementById("resourceCard").style.cssText = 'display: block;';
-    card.style.cssText = 'width: 540px;';
+    card.style.width = (cardWidth + 280) + 'px';
     document.getElementById("learnMore").style.cssText = 'display: none;';
+
+    
 }
 
 function infoReveal() {
-    var body = document.getElementsByTagName("body");
     var card = document.getElementById("cardContainer");
+    var cardWidth = card.clientWidth;
     
     document.getElementById("infoCard").style.cssText = 'display: block;';
-    card.style.cssText = 'width: 820px;';
+    
+
+    if (card.clientWidth >= 820) {
+        card.style.cssText = 'width: 820px;';
+    } else {
+        card.style.width = (cardWidth + 280) + 'px';
+    }
+    
     // document.getElementById("resourceCard").style.cssText = 'margin-right: 10px;';
 }

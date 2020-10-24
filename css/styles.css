@@ -6,6 +6,8 @@
     --text-color: #ffffff;
     --white: #ffffff;
     --placeholder-color: #C4C6F1;
+    --dark-teal: #008B72;
+    --light-teal: #00E5BC;
 }
 
 html {
@@ -97,6 +99,12 @@ footer {
             display: none;
         }
 
+            .resource>div>img {
+                padding: 20px;
+                display: block;
+                margin: 0 auto;
+            }
+
             .resource>div>h4 {
                 font-size: 18px;
                 font-weight: 400;
@@ -113,6 +121,46 @@ footer {
                 font-size: 0.9em;
                 letter-spacing: 0.025em;
             }
+
+                .resource>div>p>a {
+                    text-decoration: none;
+                    font-style: italic;
+                    border-bottom: 1px solid var(--dark-teal);
+                    color: var(--dark-blue-stroke);
+                }
+
+                    .resource>div>p>a:hover {
+                        color: var(--dark-teal);
+                    }
+
+                .resource>div>ul {
+                    list-style: none;
+                    margin-block-start: 8px;
+                    padding-inline-start: 0;
+                    letter-spacing: 0.01em;
+                    font-size: 16px;
+                }
+
+                .resource>div>ul>li {
+                    text-decoration: none;
+                    font-style: italic;
+                    color: var(--dark-blue-stroke);
+                }
+
+                .resource>div>ul>li>a {
+                    text-decoration: none;
+                    color: var(--dark-blue-stroke);
+                    border-bottom: 1px solid var(--placeholder-color);
+                    padding-bottom: 2px;
+                }
+
+                .resource>div>ul>li>a:hover {
+                    color: var(--dark-teal);
+                }
+
+                    .resource>div>ul>li::before {
+                        content: "+ ";
+                    }
 
         .resource > div:target {
             display: block;
@@ -315,7 +363,7 @@ h1 {
 
                 #result>p>a:hover,
                 #result>ul>li>a:hover {
-                    color: var(--yellow);
+                    color: var(--light-teal);
                 }
 
             #result>ul>li::before {

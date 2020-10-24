@@ -1,3 +1,6 @@
+var learnMore = '<a id="learnMore" onclick="resourceReveal()" href="#">Explore ></a>';
+    
+
 var resultWildlife =
 `
     <h4>Yes, It's possible!</h4>
@@ -32,7 +35,7 @@ var defaultResponse =
     <p>
         Wanna know more about NFTs?
         <br><br>
-        <a id="learnMore" onclick="resourceReveal()" href="#">Explore ></a>
+        ${learnMore}
     </p>
     `;
 
