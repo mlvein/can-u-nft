@@ -1,9 +1,13 @@
 # can-u-nft
 untitled nft hackathon
 
+[Demo Here](https://can-u-nft.vercel.app/)
+
 ### Can U NFT?
 
 Is an interactive, educational medium that aims to inform new users about NFTs. The site hosts a card-like component that takes in keywords that helps users determine whether it's possible to turn them into non-fungible tokens.
+
+The goal for this project is to educate users about NFTs while also making them curious of its untapped possibilities!
 
 ---
 
