@@ -291,9 +291,10 @@ h1 {
             text-decoration: none;
         }
 
-    .form>div {
+    #searchButton {
         background-color: var(--white);
         width: 40px;
+        height: 40px;
         border-radius: 2em;
         border: 1px solid var(--dark-blue-stroke);
         font-family: 'EB Garamond', serif;
@@ -302,12 +303,13 @@ h1 {
         text-align: center;
     }
 
-        .form>div:hover {
+        #searchButton:hover {
+            cursor: pointer;
             background-color: var(--bg-color);
             color: var(--white);
         }
 
-        .form>div:focus {
+        #searchButton:focus {
             outline: none;
         }
 

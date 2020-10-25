@@ -48,6 +48,7 @@ function resourceReveal() {
     var cardWidth = card.clientWidth;
     var learnMore = document.getElementById("learnMore");
     var authorInfo = document.getElementById("aboutLink");
+    var searchButton = document.getElementById("searchButton");
 
     if (cardWidth >= 540) {
         learnMore.style.cssText = 'display: none;';
@@ -58,6 +59,7 @@ function resourceReveal() {
     learnMore.style.zIndex = "-1";
     learnMore.style.cssText = 'display: none;';
     authorInfo.style.cssText = 'display: block;';
+    searchButton.style.cssText = 'display: none;';
     
 }
 
