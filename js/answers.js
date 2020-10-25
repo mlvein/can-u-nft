@@ -1,5 +1,5 @@
 var learnMore = '<p id="learnMore">Wanna know more about NFTs?<br><br><a onclick="resourceReveal()" href="#">Explore ></a></p>';
-var aboutInfo = '<p id="aboutLink">This is a project by<br><br><a href="https://twitter.com/_melvinalvarez" target="_blank">@_melvinalvarez</a><br><br><a href="index.html">Ask Again</a></p>';
+var aboutInfo = '<p id="aboutLink">This is a project by<br><a class="simple-link" href="https://twitter.com/_melvinalvarez" target="_blank">@_melvinalvarez</a><br><br><br><a href="index.html">Ask Again</a></p>';
 var resourceLinks = learnMore;
 
 var resultWildlife =

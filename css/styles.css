@@ -282,6 +282,15 @@ h1 {
             position: relative;
         }
 
+        .simple-link {
+            border-top: none !important;
+            border-left: none !important;
+            border-right: none !important;
+            border-bottom: 1px dotted var(--light-teal) !important;
+            padding: 0 0 2px 0 !important;
+            border-radius: 0px !important;
+        }
+
         #learnMore>a {
             height: 40px;
             border: 1px solid var(--white);
@@ -385,6 +394,8 @@ h1 {
                 color: white;
                 letter-spacing: 0.03em;
                 font-style: italic;
+                border-bottom: 1px solid var(--light-teal);
+                text-decoration: none;
             }
 
                 #aboutLink>a:hover,
