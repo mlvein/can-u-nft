@@ -1,5 +1,6 @@
-var learnMore = '<a id="learnMore" onclick="resourceReveal()" href="#">Explore ></a>';
-    
+var learnMore = '<p id="learnMore">Wanna know more about NFTs?<br><br><a onclick="resourceReveal()" href="#">Explore ></a></p>';
+var aboutInfo = '<p id="aboutLink">This is a project by<br><br><a href="https://twitter.com/_melvinalvarez" target="_blank">@_melvinalvarez</a></p>';
+var resourceLinks = learnMore;
 
 var resultWildlife =
 `
@@ -32,11 +33,8 @@ var defaultResponse =
     `
     <h4>I'm not sure...</h4>
     <hr>
-    <p>
-        Wanna know more about NFTs?
-        <br><br>
-        ${learnMore}
-    </p>
+    ${resourceLinks}
+    ${aboutInfo}
     `;
 
 var respondBlank = 

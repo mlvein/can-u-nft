@@ -1,8 +1,10 @@
+
+
 function search() {
     
     var searchResult;
     var searchQuery = document.getElementById("input001").value;
-    
+
     
     switch (searchQuery) {
         case "":
@@ -44,15 +46,18 @@ function search() {
 function resourceReveal() {
     var card = document.getElementById("cardContainer");
     var cardWidth = card.clientWidth;
+    var learnMore = document.getElementById("learnMore");
+    var authorInfo = document.getElementById("aboutLink");
 
-    if (card.clientWidth >= 540) {
-        document.getElementById("learnMore").style.cssText = 'display: none;';
+    if (cardWidth >= 540) {
+        learnMore.style.cssText = 'display: none;';
     } 
     
     document.getElementById("resourceCard").style.cssText = 'display: block;';
     card.style.width = (cardWidth + 280) + 'px';
-    document.getElementById("learnMore").style.cssText = 'display: none;';
-
+    learnMore.style.zIndex = "-1";
+    learnMore.style.cssText = 'display: none;';
+    authorInfo.style.cssText = 'display: block;';
     
 }
 
@@ -61,7 +66,6 @@ function infoReveal() {
     var cardWidth = card.clientWidth;
     
     document.getElementById("infoCard").style.cssText = 'display: block;';
-    
 
     if (card.clientWidth >= 820) {
         card.style.cssText = 'width: 820px;';
@@ -69,5 +73,4 @@ function infoReveal() {
         card.style.width = (cardWidth + 280) + 'px';
     }
     
-    // document.getElementById("resourceCard").style.cssText = 'margin-right: 10px;';
 }
