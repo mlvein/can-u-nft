@@ -1,5 +1,5 @@
 # can-u-nft
-untitled nft hackathon
+Educational Content for NFTs bounty, untitled nft hackathon
 
 [Demo Here](https://can-u-nft.vercel.app/)
 
