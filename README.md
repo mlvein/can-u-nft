@@ -1,5 +1,6 @@
 # can-u-nft
-Educational Content for NFTs bounty, untitled nft hackathon
+A project that aims to help with access to NFT information and resources
+Super Secret Banana
 
 [Demo Here](https://can-u-nft.vercel.app/)
 
